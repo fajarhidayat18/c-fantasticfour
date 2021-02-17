@@ -51,9 +51,6 @@ nav:hover {
   opacity: 0.5;
 }
 
-header {
-  height: 10000px;
-}
 
 .login span:hover {
  box-shadow: 5px 5px 9px #747474, -5px -5px 9px #ffffff;

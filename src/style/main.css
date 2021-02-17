@@ -54,23 +54,13 @@ img.logo::before{
 
 /* header */
 .top-wrapper {
-  color:white;
-  text-align: center;
   padding: 180px 0 100px 0;
-  position: relative;
-  /* -webkit-filter:brightness(80%);  */
-}
-.top-wrapper::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-image: url(https://artboard.studio/_next/image?url=https%3A%2F%2Fcdn.artboard.studio%2Fprivate%2FGoogle_113596245918522199101%2Fprojects%2F60128a4c26618e001c00c616%2Fthumbnail-retina.png&w=1200&q=75);
   background-size: cover;
-  background-position: top center;
-  filter: brightness(0.5);
+  color:white;
+  text-align: center;
+  filter: brightness(80%);
+  -webkit-filter:brightness(80%); 
 }
 .top-wrapper h1 {
   opacity: 0.9;
@@ -96,8 +86,11 @@ img.logo::before{
   padding: 12px 24px;
   color: white;
   display: inline-block;
-  opacity: 0.9;
+  opacity: 0.8;
   border-radius: 4px;
+}
+.btn:hover {
+  opacity: 1;
 }
 .fa {
   margin-right: 5px;

@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #e6e7ee;
+    font-family: 'Palanquin', sans-serif;
 }
 
 nav {

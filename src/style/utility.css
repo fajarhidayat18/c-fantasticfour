@@ -42,6 +42,9 @@
 .f-column{
     flex-direction: column;
 }
-.f-wrap {
+.f-wrap{
     flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
 }

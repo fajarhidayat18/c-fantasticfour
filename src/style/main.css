@@ -53,10 +53,55 @@ img.logo::before{
 }
 
 /* header */
-header{
-  height: 25rem;
+.top-wrapper {
+  color:white;
+  text-align: center;
+  padding: 180px 0 100px 0;
+  position: relative;
+  /* -webkit-filter:brightness(80%);  */
 }
-
+.top-wrapper::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://artboard.studio/_next/image?url=https%3A%2F%2Fcdn.artboard.studio%2Fprivate%2FGoogle_113596245918522199101%2Fprojects%2F60128a4c26618e001c00c616%2Fthumbnail-retina.png&w=1200&q=75);
+  background-size: cover;
+  background-position: top center;
+  filter: brightness(0.5);
+}
+.top-wrapper h1 {
+  opacity: 0.9;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+.top-wrapper p {
+  opacity: 0.9;
+  margin-bottom: 3px;
+}
+.btn-wrapper {
+  margin: 20px 0;
+}
+.btn-wrapper p {
+  margin: 10px 0;
+}
+.browse {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.9;
+  border-radius: 4px;
+}
+.fa {
+  margin-right: 5px;
+}
 
 /* content */
 

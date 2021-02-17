@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,23 +14,20 @@
     <link rel="stylesheet" href="src/style/main.css">
     <link rel="stylesheet" href="src/style/responsive.css">
     <link rel="stylesheet" href="src/style/animation.css">
+    <link rel="stylesheet" href="src/style/utility.css">
     <title>C Fantastic Four</title>
 
 </head>
 <body>
     <!-- NAVBAR Start -->
-    <nav>
-        <div class = 'header-left'>
-            <img class = 'logo' src = 'https://i.postimg.cc/FRrHJnPy/logo-baru-removebg-preview-1.png'>
-        </div>
-        
-        <div class = 'header-right'>
-            <div class = 'login'>
-                <span>🔍 CARI</span>
-                <span>🛒 BELANJA</span>
-                <span>👤 MASUK</span>
-              </div>
-
+    <nav class="container-fluid flex f-content-between f-align-center">
+        <a href="#">
+            <img class="logo" src="src/img/Logo.png">
+        </a>
+        <div class="login">
+            <span>🔍 CARI</span>
+            <span>🛒 BELANJA</span>
+            <span>👤 MASUK</span>
         </div>
     </nav>
     <!-- NAVBAR End -->
@@ -38,19 +36,79 @@
     <header>
     </header>
     <!-- HERO End -->
+
+
     <!-- CONTENT Start -->
     <section>
+        <div class="container-fluid">
+            <div class="flex f-content-center f-column">
+                <div class="section-title">
+                    <h3>Product Mockup</h3>
+                </div>
+                <div class="contents flex f-content-center f-wrap">
+                    <div class="contents-item">
+                      <img src="src/img/Man_wearing_a_hoodie_mockup.jpg" width="350px" height="197px">
+                      <p>Hoodie</p>
+                    </div>
 
+                    <div class="contents-item">
+                      <img src="src/img/black-t-shirt-mockup.jpg" width="350px" height="197px">
+                      <p>T-shirt</p>
+                    </div>
+                    <div class="contents-item">
+                      <img src="src/img/smartphone-mockup.jpg" width="350px" height="197px">
+                      <p>Smartphone</p>
+                    </div>
+                    <div class="contents-item">
+                      <img src="src/img/tablet-mockup.jpg" width="350px" height="197px">
+                      <p>Tablet</p>
+                    </div>
+                    <div class="contents-item">
+                        <img src="src/img/book-mockup.jpg" width="350px" height="197px">
+                        <p>Book</p>
+                    </div>
+                    <div class="contents-item">
+                        <img src="src/img/macbook-mockup.jpg" width="350px" height="197px">
+                        <p>Macbook</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <section class="explication">
+            <div class="container-fluid flex f-content-center f-align-center">
+                <div class="explication-left">
+                    <img src="src/img/2 cover ticket mockups by freeject.net.jpg" alt="" height="450px" width="650px">
+                </div>
+                <div class="explication-right">
+                    <h1>Apa itu "Mock Up" ?</h1>
+                    <h3>Dalam proses desain dan pengembangan produk, mockup adalah visualisasi sebuah konsep desain. </h3>
+                    <h3>Gampangnya untuk menempelkan design ke suatu media.</h3>
+                    <h3>Mock up ini penting karena dapat memberikan gambaran <span>(preview)</span> sebelum dicetak atau diproduksi.</h3>
+                    <h3>Biaya yang dikeluarkan bisa lebih hemat karena tidak perlu mencetak desain yang belum fix.</h3>
+                </div>
+            </div>
+    </section>
     <!-- tambah kan section sendiri bila diperlukan -->
-    <!-- <section></section> -->
 
     <!-- CONTENT End -->
 
     <!-- FOOTER Start -->
     <footer>
-
+        <div class="container-footer">
+            <img class="gambar" src="https://i.postimg.cc/jdh1vxhY/image.png">
+            <h1>
+              Dibuat oleh :
+            </h1>
+            <ul>
+              <li>Pujo Prayogo</li>
+              <li>Angelica Rivera</li>
+              <li>Giska Puspitasari</li>
+              <li>Timotius Weslie</li>
+              <li>Fajar Hidayat</li>
+            </ul>
+        </div>
     </footer>
     <!-- FOOTER End -->
 </body>

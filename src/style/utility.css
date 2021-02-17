@@ -16,10 +16,32 @@
 
 /* Utility */
 .container-fluid{
-    max-width: 1320px;
+    width: 100%;
+    padding: 0 1rem;
     margin: 0 auto;
 }
 .container{
-    max-width: 720px;
+    width: 100%;
+    max-width: 960px;
+    padding: 0 1rem;
     margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+.f-content-center{
+    justify-content: center;
+}
+.f-content-between{
+    justify-content: space-between;
+}
+.f-align-center{
+    align-content: center;
+}
+.f-column{
+    flex-direction: column;
+}
+.f-wrap {
+    flex-wrap: wrap;
 }

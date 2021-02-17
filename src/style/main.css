@@ -2,65 +2,125 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #e6e7ee;
     font-family: 'Palanquin', sans-serif;
 }
 
+body{
+  background: #e6e7ee;
+}
+
+/* navbar */
 nav {
-  background-color: rgba(240, 240, 243,0.5);
+  background-color: rgba(240, 240, 243, 0.5);
   width: 100%;
-  height: 70px;
+  height: 5rem;
   position: fixed;
   z-index: 10;
-  
-
+  align-items: center;
 }
-.logo {
-  width: 70px;
-  padding: 10px;
-  margin-left: 20px;
-}
-
 nav:hover {
-  opacity: 1;
+  background-color: rgba(240, 240, 243, 1);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   transition: all 0.2s;
-  
 }
-.container {
-  float: right;
+.logo {
+  height: 5rem;
+  width: 5rem;
 }
-.header-left {
-  float: left;
+img.logo::before{
+  background: transparent;
 }
-
-.header-right {
-  float: right;
-}
-
-.login span{
-  font-family: "Raleway";
+.login span {
   color: black;
   background-color: #F0F0F3;
   padding: 10px 20px;
-  line-height: 70px;
-  border-radius: 20px;
+  border-radius: 12rem;
   cursor: pointer;
-  margin-right: 25px;
+  margin: 0 1rem;
   box-shadow: rgb(213, 210, 208) 5px 5px 15px, rgb(255, 255, 255) -5px -5px 15px;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 10px;
   opacity: 0.5;
 }
-
-
 .login span:hover {
- box-shadow: 5px 5px 9px #747474, -5px -5px 9px #ffffff;
+  box-shadow: 5px 5px 9px #747474, -5px -5px 9px #ffffff;
   transition: all 0.5s;
   opacity: 1;
 }
-
 .login span:active {
   box-shadow: inset 5px 5px 9px #cacaca, inset -5px -5px 9px #f6f6f6;
   opacity: 1;
+}
+
+/* header */
+header{
+  height: 25rem;
+}
+
+
+/* content */
+
+.section-title {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+.section-title h3 {
+  text-align: left;
+  margin-left: 4rem;
+}
+.contents-item {
+  padding: 0 20px;
+  text-align: center;
+}
+.contents-item p { 
+  padding: 10px 0;
+}
+
+.explication { 
+  padding-top: 8rem;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+.explication-right { 
+  width: 40%;
+  color: #5f5d60;
+}
+.explication-right h1, h3{ 
+  text-align: center;
+}
+.explication-right h1 { 
+  font-size: 30px;
+}
+.explication-right h3 { 
+  font-size: 20px;
+  margin: 22px 0;
+}
+.explication-right span{ 
+  font-style: italic;
+}
+
+
+
+/* footer */
+footer .container-footer{
+  margin-top: 7rem;
+  width : 100%;
+  color: #CFC7BE;
+  background-color: #1F2227;
+  text-align : center;
+}
+
+
+.gambar {
+  height: 150px;
+  color: #CFC7BE;
+}
+footer li {
+  list-style: none;
+  font-size : 15px;
+}
+footer h1 {
+  font-size : 20px;
 }

@@ -5,24 +5,5 @@
     background: #e6e7ee;
     font-family: 'Palanquin', sans-serif;
 }
-/* Note start */
-/* 
-    ukuran
-    small: 540px,
-    medium: 720px,
-    large: 960px,
-    xl: 1140px,
-    xxl: 1320px
 
-    color
-    $primary: #e6e7ee;
-    $secondary: #2D4CC8;
-    $tertiary: #e6e7ee;
-*/
-/* Note end */
-
-.container{
-    max-width: 1320px;
-    margin: 0 auto;
-    background: #2D4CC8;
-}
+/* style */

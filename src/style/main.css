@@ -11,17 +11,17 @@ body{
 
 /* navbar */
 nav {
-  background-color: rgba(240, 240, 243, 0.5);
+  background: transparent;
   width: 100%;
-  height: 5rem;
-  position: fixed;
-  z-index: 10;
+  height: 4rem;
+  position: absolute;
+  z-index: 1;
   align-items: center;
+  transition: 0.5s;
 }
 nav:hover {
-  background-color: rgba(240, 240, 243, 1);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-  transition: all 0.2s;
+  background-color: #e6e7ee;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .logo {
   height: 5rem;
@@ -30,67 +30,59 @@ nav:hover {
 img.logo::before{
   background: transparent;
 }
-.login span {
+ .login a.btn {
   color: black;
-  background-color: #F0F0F3;
-  padding: 10px 20px;
+  background-color: #e6e7ee;
+  padding: 5px 20px;
   border-radius: 12rem;
-  cursor: pointer;
   margin: 0 1rem;
-  box-shadow: rgb(213, 210, 208) 5px 5px 15px, rgb(255, 255, 255) -5px -5px 15px;
+  box-shadow: -0.5px -0.5px 10px rgba(255, 255, 255, 0.5),
+              0.5px 0.5px 10px rgba(0, 0, 0, 0.5);
   font-weight: bolder;
-  font-size: 10px;
-  opacity: 0.5;
-}
-.login span:hover {
-  box-shadow: 5px 5px 9px #747474, -5px -5px 9px #ffffff;
+  border: none;
   transition: all 0.5s;
-  opacity: 1;
 }
-.login span:active {
-  box-shadow: inset 5px 5px 9px #cacaca, inset -5px -5px 9px #f6f6f6;
-  opacity: 1;
+.login a.btn:hover {
+  box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.5),
+              1px 1px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.login a.btn:active {
+  box-shadow: inset 5px 5px 9px #cacaca, 
+              inset -5px -5px 9px #f6f6f6;
+  transform: scale(0.9);
 }
 
 /* header */
 .top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://artboard.studio/_next/image?url=https%3A%2F%2Fcdn.artboard.studio%2Fprivate%2FGoogle_113596245918522199101%2Fprojects%2F60128a4c26618e001c00c616%2Fthumbnail-retina.png&w=1200&q=75);
-  background-size: cover;
+  height: 100vh;
   color:white;
+  position: relative;
   text-align: center;
-  filter: brightness(80%);
-  -webkit-filter:brightness(80%); 
+  padding: 180px 0 100px 0;
+}
+.top-wrapper::before{
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-size: cover;
+  filter: brightness(50%);
+  background-position: top center;
+  background-image: url(/src/img/bg-header.webp);
+  background-attachment: fixed;
 }
 .top-wrapper h1 {
   opacity: 0.9;
-  font-size: 45px;
+  font-size: 3rem;
   letter-spacing: 5px;
   margin-bottom: 10px;
 }
 .top-wrapper p {
   opacity: 0.9;
   margin-bottom: 3px;
-}
-.btn-wrapper {
-  margin: 20px 0;
-}
-.btn-wrapper p {
-  margin: 10px 0;
-}
-.browse {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-}
-.btn:hover {
-  opacity: 1;
 }
 .fa {
   margin-right: 5px;
@@ -99,17 +91,21 @@ img.logo::before{
 /* content */
 
 .section-title {
-  padding-top: 80px;
-  padding-bottom: 30px;
-  color: #5f5d60;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  color: #2e2b22;
 }
 .section-title h3 {
   text-align: left;
   margin-left: 4rem;
+  font-size: 1.5rem;
 }
 .contents-item {
-  padding: 0 20px;
   text-align: center;
+}
+.contents-item img{
+  height: 10rem;
+  width: 18rem;
 }
 .contents-item p { 
   padding: 10px 0;
@@ -121,9 +117,7 @@ img.logo::before{
   align-content: center;
   align-self: center;
 }
-.explication-right { 
-  width: 40%;
-  color: #5f5d60;
+.explication-right {
 }
 .explication-right h1, h3{ 
   text-align: center;

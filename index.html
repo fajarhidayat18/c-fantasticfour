@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/img/Logo.png">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Palanquin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- STYLE -->
     <link rel="stylesheet" href="src/style/main.css">
@@ -26,9 +28,9 @@
             <img class="logo" src="src/img/Logo.png">
         </a>
         <div class="login">
-            <span>🔍 CARI</span>
-            <span>🛒 BELANJA</span>
-            <span>👤 MASUK</span>
+            <a class="btn"><i class="fa fa-search"></i><span>Cari</span></a>
+            <a class="btn" href="#shop"><i class="fa fa-shopping-cart"></i><span>Belanja</span></a>
+            <a class="btn"><i class="fa fa-user"></i><span>Masuk</span></a>
         </div>
     </nav>
     <!-- NAVBAR End -->
@@ -36,12 +38,15 @@
     <!-- HERO start -->
     <header>
         <div class="top-wrapper">
-            <div class="container-fluid">
+            <div class="container-fluid flex f-align-center f-content-center f-column">
                 <h1>1,000 + Ready Made Designs Download</h1>
                 <h1>Ever-growing library of mockups and templates.</h1>
                 <p>Choose from our carefully crafted templates.</p>
                 <div class="btn-wrapper">
-                  <a href="#" class="btn browse"><span class="fa fa-facebook"></span>Browse all mockup</a>
+                  <a href="#" class="btn">
+                      <i class="fa fa-facebook"></i>
+                      <span>Browse all mockup</span>
+                  </a>
                 </div>
             </div>
         </div>
@@ -49,37 +54,48 @@
     <!-- HERO End -->
 
     <!-- CONTENT Start -->
-    <section>
+    <section id="shop">
         <div class="container-fluid">
             <div class="flex f-content-center f-column">
                 <div class="section-title">
                     <h3>Product Mockup</h3>
                 </div>
                 <div class="contents flex f-content-center f-wrap">
-                    <div class="contents-item">
-                      <img src="src/img/Man_wearing_a_hoodie_mockup.jpg" width="350px" height="197px">
-                      <p>Hoodie</p>
+                    <div class="card contents-item">
+                      <img src="src/img/Man_wearing_a_hoodie_mockup.webp" width="350px" height="197px">
+                      <p class="btn-card">
+                         <span> Hoodie</span>
+                      </p>
                     </div>
-
-                    <div class="contents-item">
-                      <img src="src/img/black-t-shirt-mockup.jpg" width="350px" height="197px">
-                      <p>T-shirt</p>
+                    <div class="card contents-item">
+                      <img src="src/img/black-t-shirt-mockup.webp" width="350px" height="197px">
+                      <p class="btn-card">
+                         <span> T-shirt</span>
+                      </p>
                     </div>
-                    <div class="contents-item">
-                      <img src="src/img/smartphone-mockup.jpg" width="350px" height="197px">
-                      <p>Smartphone</p>
+                    <div class="card contents-item">
+                      <img src="src/img/smartphone-mockup.webp" width="350px" height="197px">
+                      <p class="btn-card">
+                         <span> Smartphone</span>
+                      </p>
                     </div>
-                    <div class="contents-item">
-                      <img src="src/img/tablet-mockup.jpg" width="350px" height="197px">
-                      <p>Tablet</p>
+                    <div class="card contents-item">
+                      <img src="src/img/tablet-mockup.webp" width="350px" height="197px">
+                      <p class="btn-card">
+                         <span> Tablet</span>
+                      </p>
                     </div>
-                    <div class="contents-item">
-                        <img src="src/img/book-mockup.jpg" width="350px" height="197px">
-                        <p>Book</p>
+                    <div class="card contents-item">
+                        <img src="src/img/book-mockup.webp" width="350px" height="197px">
+                        <p class="btn-card">
+                         <span>   Book</span>
+                      </p>
                     </div>
-                    <div class="contents-item">
-                        <img src="src/img/macbook-mockup.jpg" width="350px" height="197px">
-                        <p>Macbook</p>
+                    <div class="card contents-item">
+                        <img src="src/img/macbook-mockup.webp" width="350px" height="197px">
+                        <p class="btn-card">
+                         <span>   Macbook</span>
+                      </p>
                     </div>
                 </div>
             </div>
@@ -87,11 +103,11 @@
     </section>
 
     <section class="explication">
-            <div class="container-fluid flex f-content-center f-align-center">
-                <div class="explication-left">
-                    <img src="src/img/2 cover ticket mockups by freeject.net.jpg" alt="" height="450px" width="650px">
+            <div class="container-fluid flex f-row f-content-center f-align-center ">
+                <div class="explication-left f-align-center col-1">
+                    <img src="src/img/2 cover ticket mockups by freeject.net.webp" alt="" height="450px" width="650px">
                 </div>
-                <div class="explication-right">
+                <div class="explication-right f-align-center col-1">
                     <h1>Apa itu "Mock Up" ?</h1>
                     <h3>Dalam proses desain dan pengembangan produk, mockup adalah visualisasi sebuah konsep desain. </h3>
                     <h3>Gampangnya untuk menempelkan design ke suatu media.</h3>

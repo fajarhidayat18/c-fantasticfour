@@ -65,7 +65,7 @@ nav .fa{
   color:white;
   position: relative;
   text-align: center;
-  padding: 180px 0 100px 0;
+  padding: 20vh;
 }
 .top-wrapper::before{
   content: '';
@@ -122,6 +122,10 @@ nav .fa{
   align-items: center;
   align-content: center;
   align-self: center;
+}
+.explication-left img {
+  width: 50vw;
+  height: auto;
 }
 .explication-right h1, h3{ 
   text-align: center;

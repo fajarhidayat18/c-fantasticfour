@@ -1,6 +1,7 @@
 @media (max-width : 768px){
     .humberger{
         display: inline-block;
+        color: black;
     }
     .nav-items{
         display: none;
@@ -9,6 +10,9 @@
         font-size: 2rem;
         letter-spacing: 2.5px;
         margin-bottom: 5px;
+    }
+    .top-wrapper{
+        padding: 20vh 0;
     }
     .section-title h3 {
         text-align: center;
@@ -56,4 +60,17 @@
         font-size: 1rem;
         margin: 10px 0;
     }
+}
+
+@media (max-width:1024px){
+    .f-wrap-reverse{
+        flex-wrap: wrap-reverse;
+    }
+    .explication-right h1 { 
+        font-size: 30px;
+      }
+      .explication-right h3 { 
+        font-size: 20px;
+        margin: 22px 0;
+      }
 }

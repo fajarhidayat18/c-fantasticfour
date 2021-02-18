@@ -52,6 +52,12 @@ img.logo::before{
               inset -5px -5px 9px #f6f6f6;
   transform: scale(0.9);
 }
+nav .fa{
+  margin: 0;
+}
+.humberger{
+  display: none;
+}
 
 /* header */
 .top-wrapper {
@@ -116,8 +122,6 @@ img.logo::before{
   align-items: center;
   align-content: center;
   align-self: center;
-}
-.explication-right {
 }
 .explication-right h1, h3{ 
   text-align: center;

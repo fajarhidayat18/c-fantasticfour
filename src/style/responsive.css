@@ -1,0 +1,59 @@
+@media (max-width : 768px){
+    .humberger{
+        display: inline-block;
+    }
+    .nav-items{
+        display: none;
+    }
+    .top-wrapper h1 {
+        font-size: 2rem;
+        letter-spacing: 2.5px;
+        margin-bottom: 5px;
+    }
+    .section-title h3 {
+        text-align: center;
+        font-size: 2rem;
+        margin: 0;
+    }
+    .explication-left img {
+        width: 100%;
+        height: auto;
+    }
+    .f-wrap-reverse{
+        flex-wrap: wrap-reverse;
+    }
+    .explication-right h1 { 
+        font-size: 2.3rem;
+      }
+    .explication-right h3 { 
+        font-size: 1.5rem;
+        margin: 22px 0;
+    }
+}
+
+@media (max-width : 425px){
+    .top-wrapper h1 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        margin-bottom: 2.5px;
+    }
+    .top-wrapper p{
+        font-size: 0.7em;
+    }
+    .btn-wrapper a.btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.7em;
+    }
+    .section-title h3 {
+        text-align: center;
+        font-size: 1.7rem;
+        margin: 0;
+    }
+    .explication-right h1 { 
+        font-size: 2rem;
+    }
+    .explication-right h3 { 
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+}

@@ -48,9 +48,6 @@
 .f-wrap{
     flex-wrap: wrap;
 }
-.f-wrap-reverse{
-    flex-wrap: wrap-reverse;
-}
 a{
     text-decoration: none;
 }
